@@ -1,36 +1,3 @@
-Niente panico, è l'errore più comune in assoluto! L'errore 429
-(insufficient_quota) significa semplicemente che il tuo account sviluppatore di
-OpenAI ha il "credito esaurito" a zero.
-
-Ecco una cosa che confonde in molti: avere l'abbonamento a ChatGPT Plus (quello
-da 20€ al mese) NON include l'utilizzo delle API esterne. Le API funzionano come
-una SIM a consumo ricaricabile separata.
-
-Hai due strade davanti a te in questo momento. Scegli tu quale preferisci per la
-riunione:
-
-Opzione A: Risolvere l'errore (e mantenere la versione Dinamica)
-
-Se vuoi la magia del calcolo in diretta, devi ricaricare il credito API di
-OpenAI. Bastano 5 dollari (che ti dureranno per centinaia di preventivi).
-
-1.  Vai su OpenAI Billing.
-2.  Clicca su "Add payment details" (Aggiungi un metodo di pagamento) se non
-    l'hai fatto.
-3.  Clicca su "Add to credit balance" e carica il minimo (5$).
-4.  Torna sulla tua app Streamlit, riprova a cliccare il pulsante e vedrai che
-    funzionerà all'istante!
-
-Opzione B: Tornare alla versione "Simulata" (Gratis, Sicura e Senza API)
-
-Se la riunione è a breve, non vuoi inserire carte di credito ora, o vuoi la
-sicurezza al 100% che la demo non si blocchi per colpa del Wi-Fi del cliente,
-torniamo alla versione finta. È identica alla vista, fa un effetto WOW pazzesco,
-ma i risultati sono pre-impostati. Io per le prime riunioni uso quasi sempre
-questa per non avere rischi tecnici!
-
-Se preferisci l'Opzione B, vai su GitHub, clicca la matita ✏️ sul file app.py e
-sostituisci tutto con questo codice:
 
 import streamlit as st
 import time
@@ -118,7 +85,5 @@ Ufficio Commerciale - Packaging Service Srl
 """
     st.text_area("Copia o modifica il testo prima di inviare:", value=bozza_email, height=400)
 
-Scegli tu la strada: ricarica i 5$ se vuoi "giocarci" dal vivo con loro,
-altrimenti metti il codice della versione finta, fai la figura del maestro e ti
-porti a casa il cliente senza tirare fuori un centesimo. Come vuoi procedere?
+
 
